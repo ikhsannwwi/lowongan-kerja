@@ -15,7 +15,7 @@
             <li class="breadcrumb-item"><a href="/">Home</a></li>
             <li class="breadcrumb-item">Kategori Lowongan Kerja</li>
             <li class="breadcrumb-item active">Edit Data Kategori Lowongan Kerja</li>
-          </ol>
+          </ol> 
         </nav>
       </div><!-- End Page Title -->
 
