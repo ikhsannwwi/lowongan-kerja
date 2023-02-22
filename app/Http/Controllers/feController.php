@@ -36,4 +36,9 @@ class feController extends Controller
 
         return view('fe.tentang-kami');
     }
+    public function berita(){
+
+
+        return view('fe.berita');
+    }
 }

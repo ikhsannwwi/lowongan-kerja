@@ -83,8 +83,8 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link {{request()->is('/') ? 'active' : ''}}">Home</a>
-                        <a href="/tentang-kami" class="nav-item nav-link {{request()->is('tentang-kami') ? 'active' : ''}}">Tentang Kami</a>
                         <a href="/lowongan-kerja" class="nav-item nav-link {{request()->is('lowongan-kerja') ? 'active' : ''}}">Lowongan Kerja</a>
+                        <a href="/berita" class="nav-item nav-link {{request()->is('berita') ? 'active' : ''}}">Berita</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle {{request()->is('prosedur-melamar-kerja',
                             'prosedur-perusahaan'
@@ -96,8 +96,8 @@
                         </div>
                         <a href="/kontak-kami" class="nav-item nav-link {{request()->is('kontak-kami') ? 'active' : ''}}">Kontak Kami</a>
                     </div>
-                    <div class="ms-auto d-none d-lg-block">
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-3">Get A Quote</a>
+                    <div class="ms-auto d-lg-block">
+                        <a href="tentang-kami" class="btn btn-primary rounded-pill py-2 px-3">Tentang Kami</a>
                     </div>
                 </div>
             </nav>
