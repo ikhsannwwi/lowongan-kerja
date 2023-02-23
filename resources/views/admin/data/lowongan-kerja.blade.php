@@ -1,7 +1,7 @@
 @extends('admin.layout.header')
 
 @section('title')
-    Lowongan Kerja - 
+    Lowongan Kerja 
 @endsection
 
 @section('content')
@@ -61,7 +61,7 @@
                                   <td>{{$row->kategori_loker->kategori}}</td>
                                   <td>{{$row->kualifikasi}}</td>
                                   <td>{{$row->tanggal}}</td>
-                                  <td><img src="{{asset('images/lowongan-kerja/.')}}" alt=""></td>
+                                  <td><img width="100px" src="{{asset('images/lowongan-kerja/'.$row->foto)}}" alt="{{$row->foto}}"></td>
                                 </tr>
                                 @endforeach
                             </tbody>

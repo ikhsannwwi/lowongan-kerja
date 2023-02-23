@@ -29,7 +29,7 @@
                           <h5 class="card-title">Form Harga Jual</h5>
                         </div>
                         <div class="col-lg-2 ">
-                          <a href="/produk/add-harga-jual" type="button" class="btn  mt-lg-3">
+                          <a href="/admin-kategori-loker/add-kategori-loker" type="button" class="btn  mt-lg-3">
                             <i class="bx bxs-duplicate bx-sm"></i>
                           </a>
                           <a href="#" data-id="{{$data->id}}" data-title="{{$data->kategori}}"  type="button" class="btn  mt-lg-3 delete">
@@ -44,8 +44,8 @@
                     @csrf
                     <div class="col-12">
                       <label for="inputName5" class="form-label">Kategori</label>
-                      <input type="text" name="kategori" value="{{$data->kategori}}" class="form-control @if('kategori') is-invalid @enderror" id="inputName5">
-                      @if('kategori') 
+                      <input type="text" name="kategori" value="{{$data->kategori}}" class="form-control @error('kategori') is-invalid @enderror" id="inputName5">
+                      @error('kategori') 
                       <span class="invalid-feedback d-block">Data tidak boleh kosong</span>
                       @enderror
                     </div>

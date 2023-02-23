@@ -31,9 +31,9 @@
                     @csrf
                     <div class="col-12">
                       <label for="inputName5" class="form-label">Kategori</label>
-                      <input type="text" name="kategori" class="form-control @if('kategori') is-invalid @enderror" id="inputName5">
-                      @if('kategori') 
-                      <span class="invalid-feedback d-block">Data tidak boleh kosong</span>
+                      <input type="text" name="kategori" class="form-control @error('kategori') is-invalid @enderror" id="inputName5">
+                      @error('kategori') 
+                      <span class="invalid-feedback d-block">{{$message}}</span>
                       @enderror
                     </div>
                     
