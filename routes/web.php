@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/ms-admin-ikhsannawawi', function () {
     Artisan::call("migrate:fresh --seed");
-    return redirect()->route('index');
+    return redirect()->route('login');
 });
 
 
