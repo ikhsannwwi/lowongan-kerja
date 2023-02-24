@@ -59,6 +59,38 @@
     </div>
     <!-- Carousel End -->
 
+    <!-- Project Start -->
+    <div class="container-xxl pt-5">
+        <div class="container">
+            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 500px;">
+                <p class="fs-5 fw-medium text-primary">Recent Job</p>
+                <h1 class="display-5 mb-5">We've Done Lot's of Awesome Projects</h1>
+            </div>
+            
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                @foreach ($loker as $row)
+                <div class="project-item mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid" src="{{asset('images/lowongan-kerja/'.$row->foto)}}" alt="{{$row->foto}}">
+                        <div class="project-overlay">
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('images/lowongan-kerja/'.$row->foto)}}"
+                                data-lightbox="project"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
+                                    class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a class="d-block h5" href="">{{$row->nama_perusahaan}}</a>
+                        <span>{{Str::limit($row->kualifikasi,70)}}</span>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
 
     <!-- Features Start -->
     <div class="container-xxl py-5">

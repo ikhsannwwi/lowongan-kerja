@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\lowongan_kerja;
 use Illuminate\Http\Request;
 
 class feController extends Controller
 {
     public function index(){
+        $loker = lowongan_kerja::orderBy('tanggal','DESC')->limit(6)->get();
 
-
-        return view('fe.home');
+        return view('fe.home',compact('loker'));
     }
     public function lowongan_kerja(){
 
