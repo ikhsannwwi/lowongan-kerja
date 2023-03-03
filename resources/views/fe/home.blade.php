@@ -60,35 +60,360 @@
     <!-- Carousel End -->
 
     <!-- Project Start -->
-    <div class="container-xxl pt-5">
-        <div class="container">
-            <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" data-wow-delay="0.1s"
+<div class="tr-job-posted section-padding" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center text-md-start pb-5 pb-md-0 wow fadeInUp" 
                 style="max-width: 500px;">
-                <p class="fs-5 fw-medium text-primary">Recent Job</p>
+                <br>
+                <p class="fs-5 fw-medium text-primary">Our Projects</p>
                 <h1 class="display-5 mb-5">We've Done Lot's of Awesome Projects</h1>
             </div>
-            
-            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
-                @foreach ($loker as $row)
-                <div class="project-item mb-5">
-                    <div class="position-relative">
-                        <img class="img-fluid" src="{{asset('images/lowongan-kerja/'.$row->foto)}}" alt="{{$row->foto}}">
-                        <div class="project-overlay">
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href="{{asset('images/lowongan-kerja/'.$row->foto)}}"
-                                data-lightbox="project"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-light rounded-circle m-1" href=""><i
-                                    class="fa fa-link"></i></a>
-                        </div>
-                    </div>
-                    <div class="p-4">
-                        <a class="d-block h5" href="">{{$row->nama_perusahaan}}</a>
-                        <span>{{Str::limit($row->kualifikasi,70)}}</span>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </div>
+		<div class="job-tab text-center">
+			<div class="tab-content text-left">
+				<div role="tabpanel" class="tab-pane fade active show" id="hot-jobs">
+					<div class="row">
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Full Time</a>
+										<span class="tr-title">
+											<a href="#">Project Manager</a>
+											<span><a href="#">Dig File</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/7B68EE/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Project Manager</a>
+										<span><a href="#">Dig File</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span>Full Time</span></a>
+										<span class="pull-right">Posted 23 hours ago</span>
+									</div>																				
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Part Time</a>
+										<span class="tr-title">
+											<a href="#">Design Associate</a>
+											<span><a href="#">Loop</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/F0F8FF/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Design Associate</a>
+										<span><a href="#">Loop</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span class="part-time">Part Time</span></a>
+										<span class="pull-right">Posted 1 day ago</span>
+									</div>			
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Freelance</a>
+										<span class="tr-title">
+											<a href="#">Graphic Designer</a>
+											<span><a href="#">Humanity Creative</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/00FFFF/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Graphic Designer</a>
+										<span><a href="#">Humanity Creative</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span class="freelance">Freelance</span></a>
+										<span class="pull-right">Posted 10 day ago</span>
+									</div>			
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Full Time</a>
+										<span class="tr-title">
+											<a href="#">Design Consultant</a>
+											<span><a href="#">Families</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/7FFFD4/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Design Consultant</a>
+										<span><a href="#">Families</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span>Full Time</span></a>
+										<span class="pull-right">Posted Oct 09, 2017</span>
+									</div>				
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Part Time</a>
+										<span class="tr-title">
+											<a href="#">Project Manager</a>
+											<span><a href="#">Sky Creative</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/8A2BE2/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Project Manager</a>
+										<span><a href="#">Sky Creative</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>	
+									<div class="time">
+										<a href="#"><span class="part-time">Part Time</span></a>
+										<span class="pull-right">Posted 1 day ago</span>
+									</div>			
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Freelance</a>
+										<span class="tr-title">
+											<a href="#">Design Associate</a>
+											<span><a href="#">Pencil</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/5F9EA0/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Design Associate</a>
+										<span><a href="#">Pencil</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span class="freelance">Freelance</span></a>
+										<span class="pull-right">Posted 23 hours ago</span>
+									</div>				
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#" class="btn btn-primary">Full Time</a>
+										<span class="tr-title">
+											<a href="#">Graphic Designer</a>
+											<span><a href="#">Fox</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/6495ED/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Graphic Designer</a>
+										<span><a href="#">Fox</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span>Full Time</span></a>
+										<span class="pull-right">Posted Oct 09, 2017</span>
+									</div>				
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3">
+							<div class="job-item">
+								<div class="item-overlay">
+									<div class="job-info">
+										<a href="#"><span class="btn btn-primary">Part Time</span></a>
+										<span class="tr-title">
+											<a href="#">Design Consultant</a>
+											<span><a href="#">Owl</a></span>
+										</span>
+										<ul class="tr-list job-meta">
+											<li><i class="fa fa-map-signs" aria-hidden="true"></i>San Francisco, CA, US</li>
+											<li><i class="fa fa-briefcase" aria-hidden="true"></i>Mid Level</li>
+											<li><i class="fa fa-money" aria-hidden="true"></i>$5,000 - $6,000</li>
+										</ul>
+										<ul class="job-social tr-list">
+											<li><a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-expand" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-bookmark-o" aria-hidden="true"></i></a></li>
+											<li><a href="#"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>										
+								</div>								
+								<div class="job-info">
+									<div class="company-logo">
+										<img src="https://www.bootdey.com/image/300x100/FF7F50/000000" alt="images" class="img-fluid">
+									</div>
+									<span class="tr-title">
+										<a href="#">Design Consultant</a>
+										<span><a href="#">Owl</a></span>
+									</span>
+									<ul class="tr-list job-meta">
+										<li><span><i class="fa fa-map-signs" aria-hidden="true"></i></span>San Francisco, CA, US</li>
+										<li><span><i class="fa fa-briefcase" aria-hidden="true"></i></span>Mid Level</li>
+										<li><span><i class="fa fa-money" aria-hidden="true"></i></span>$5,000 - $6,000</li>
+									</ul>
+									<div class="time">
+										<a href="#"><span class="part-time">Part Time</span></a>
+										<span class="pull-right">Posted 10 day ago</span>
+									</div>			
+								</div>
+							</div>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.tab-pane -->
+			</div>				
+		</div><!-- /.job-tab -->			
+	</div><!-- /.container -->
+</div>
     <!-- Project End -->
 
 
